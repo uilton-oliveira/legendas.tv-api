@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  legendasws:
+    image: uilton/legendasws
+    restart: unless-stopped
+    env_file:
+      - .env
