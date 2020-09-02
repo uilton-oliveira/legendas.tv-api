@@ -24,30 +24,30 @@ def guess(request, filename=None):
         return HttpResponse('', content_type="application/json; charset=utf-8")
 
 
-def autodetect(request, filename=None):
+def auto_detect(request, filename=None):
     if filename:
-        return HttpResponse(webservice.autodetect(filename), content_type="application/json; charset=utf-8")
+        return HttpResponse(webservice.auto_detect(filename), content_type="application/json; charset=utf-8")
     else:
         return HttpResponse('', content_type="application/json; charset=utf-8")
 
 
 @csrf_exempt
-def choosebest(request):
+def choose_best(request):
     data = request.POST.get("data", "")
     filename = request.POST.get("filename", "")
     if data and filename:
         decoded = json.loads(data)
-        return HttpResponse(webservice.choosebest(decoded, filename), content_type="application/json; charset=utf-8")
+        return HttpResponse(webservice.choose_best(decoded, filename), content_type="application/json; charset=utf-8")
     else:
         return HttpResponse('', content_type="application/json; charset=utf-8")
 
 
-def home(request, busca=None, pagina=1):
+def home(request, search=None, page=1):
     try:
-        busca = base64.b64decode(busca)
+        search = base64.b64decode(search)
     except:
         pass
 
-    result = webservice.gerar(busca, pagina)
+    result = webservice.search(search, page)
 
     return HttpResponse(result, content_type="application/json; charset=utf-8")

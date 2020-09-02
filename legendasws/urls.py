@@ -20,9 +20,9 @@ from . import views
 urlpatterns = [
     #    path('admin/', admin.site.urls),
     re_path(r'^$', views.index, name='index'),
-    re_path(r'^busca=(?P<busca>.+)/pagina=(?P<pagina>\d+)', views.home, name='home'),
-    re_path(r'^busca=(?P<busca>.+)', views.home, name='home'),
+    re_path(r'^busca=(?P<search>.+)/pagina=(?P<page>\d+)', views.home, name='home'),
+    re_path(r'^busca=(?P<search>.+)', views.home, name='home'),
     re_path(r'^guess=(?P<filename>.+)', views.guess, name='guess'),
-    re_path(r'^autodetect=(?P<filename>.+)', views.autodetect, name='autodetect'),
-    re_path(r'^choosebest', views.choosebest, name='choosebest')
+    re_path(r'^autodetect=(?P<filename>.+)', views.auto_detect, name='auto_detect'),
+    re_path(r'^choosebest', views.choose_best, name='choose_best')
 ]
