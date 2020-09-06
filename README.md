@@ -1,4 +1,4 @@
-# legendasws 2.0
+# legendas.tv-api
 Legendas.tv API completely rewritten in Node, with docker included.
 
 ## Environment Variables
