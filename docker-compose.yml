@@ -1,8 +1,21 @@
 version: '3.8'
 
 services:
-  legendasws:
-    image: uilton/legendasws
-    restart: unless-stopped
-    env_file:
-      - .env
+    legendasws:
+        image: uilton/legendasws:latest
+        restart: unless-stopped
+        ports:
+            - 3000:3000
+        environment:
+            - GUESSIT_HOST=http://guessit_rest
+        networks:
+            - infranet
+
+    guessit_rest:
+        image: guessit/guessit-rest:latest
+        restart: unless-stopped
+        networks:
+            - infranet
+
+networks:
+    infranet:

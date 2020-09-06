@@ -1,23 +1,15 @@
-FROM python:3.8-slim
+FROM node:14-alpine
+WORKDIR /legendasws
 
-# Setup env
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONFAULTHANDLER 1
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+COPY package*.json ./
 
-# both files are explicitly required!
-COPY Pipfile* ./
+#RUN npm install
+# If you are building your code for production
+RUN npm ci --only=production
 
-RUN pip install pipenv && \
-  apt-get update && \
-  apt-get install -y --no-install-recommends gcc python3-dev libssl-dev && \
-  pipenv install --deploy --system && \
-  apt-get remove -y gcc python3-dev libssl-dev && \
-  apt-get autoremove -y && \
-  pip uninstall pipenv -y
-
+# Bundle app source
 COPY . .
 
-EXPOSE 8000
-ENTRYPOINT ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD [ "npm", "start" ]
