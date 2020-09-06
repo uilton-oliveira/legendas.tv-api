@@ -27,10 +27,7 @@ provider.search = (searchTerm, page = 1, fetchExtraData = true) => {
 provider.autoDetect = filename => {
     return buildSearchTerm(filename)
         .then(searchTerm => {
-            return provider.search(searchTerm, 1, false)
-                .then(searchResult => {
-                    return searchResult;
-                })
+            return provider.search(searchTerm, 1, false);
         })
         .then(searchResult => {
             return guessit.chooseBest(

@@ -19,34 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4728aa1f-f2f9-4ca1-9aaf-2b046e01d9f9" name="Default Changelist" comment="Complete rewrite in Node.js">
-      <change beforePath="$PROJECT_DIR$/.env_sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/legendasws.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/legendasws.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/utils/legendastv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/utils/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/webservice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legendasws/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" />
+    <list default="true" id="4728aa1f-f2f9-4ca1-9aaf-2b046e01d9f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +62,16 @@
       <option name="presentableId" value="Default" />
       <updated>1599240527131</updated>
       <workItem from="1599240528180" duration="32982000" />
-      <workItem from="1599350802542" duration="612000" />
+      <workItem from="1599350802542" duration="1913000" />
     </task>
+    <task id="LOCAL-00001" summary="Complete rewrite in Node.js">
+      <created>1599351515000</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599351515000</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +88,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete rewrite in Node.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete rewrite in Node.js" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599318772979">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -115,10 +101,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="898" y="262" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599339948631" />
-    <state x="585" y="88" width="1093" height="863" key="CommitChangelistDialog2" timestamp="1599351269161">
+    <state x="585" y="88" width="1093" height="863" key="CommitChangelistDialog2" timestamp="1599351513263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" width="1093" height="863" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599351269161" />
+    <state x="585" y="88" width="1093" height="863" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599351513263" />
     <state width="1161" height="466" key="DebuggerActiveHint" timestamp="1599339932956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,6 +185,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599273349923" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599351516668">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599351516668" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599272141891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
