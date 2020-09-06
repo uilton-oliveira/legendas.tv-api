@@ -1,5 +1,5 @@
 # legendasws 2.0
-Legendas.tv Web Service completely rewritten in Node, with docker included.
+Legendas.tv API / Web Service completely rewritten in Node, with docker included.
 
 ## Environment Variables
 GUESSIT_HOST: GuessIt Rest URL, required for some APIs to work - https://github.com/guessit-io/guessit-rest  
