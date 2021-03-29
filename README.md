@@ -110,7 +110,7 @@ Mulan.2020.1080p.WEBRip.DDP5.1.x264-EVO
 #### Docker:
 ```
 docker run -p 5000:80 -it guessit/guessit-rest
-docker run -p 3000:3000 -e GUESSIT_HOST=http://localhost:5000 uilton/legendasws:latest
+docker run -p 3000:3000 -e GUESSIT_HOST=http://localhost:5000 ghcr.io/darksupremo/legendasws:latest
 ```
 #### Docker Compose:
 Start both this LegendasWS and GuessIt-Rest containers, in the same network.
