@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
     legendasws:
-        image: uilton/legendasws:latest
+        image: ghcr.io/darksupremo/legendasws:latest
         restart: unless-stopped
         ports:
             - 3000:3000
