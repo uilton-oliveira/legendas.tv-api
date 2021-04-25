@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+    guessit_rest:
+        image: guessit/guessit-rest:latest
+        restart: unless-stopped
+        ports:
+            - 5000:80

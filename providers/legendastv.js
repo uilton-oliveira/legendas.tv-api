@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 
 
 const provider = {}
-provider.search = (searchTerm, page = 1, fetchExtraData = true) => {
+provider.search = (searchTerm, page = 1) => {
     const pageTemplate = page <= 1 ? '' : `/-/${page}`;
     const escapedSearch = querystring.escape(searchTerm);
 
@@ -14,7 +14,7 @@ provider.search = (searchTerm, page = 1, fetchExtraData = true) => {
             const $ = cheerio.load(response.data);
             let releases = [];
 
-            $('.f_left p:not(".data") a').each((i, elem) => {
+            $('.f_left p:not(.data) a').each((i, elem) => {
                 releases.push(parseRelease(elem));
             });
             return {
@@ -27,7 +27,7 @@ provider.search = (searchTerm, page = 1, fetchExtraData = true) => {
 provider.autoDetect = filename => {
     return buildSearchTerm(filename)
         .then(searchTerm => {
-            return provider.search(searchTerm, 1, false);
+            return provider.search(searchTerm, 1);
         })
         .then(searchResult => {
             return guessit.chooseBest(
