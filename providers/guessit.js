@@ -58,7 +58,6 @@ provider.chooseBest = (names = [], filename) => {
                 score += match(base, el, 'source') ? 2 : 0;
                 score += match(base, el, 'audio_codec') ? 1 : 0;
                 score += match(base, el, 'audio_channels') ? 1 : 0;
-                score += match(base, el, 'audio_codec') ? 1 : 0;
                 score += match(base, el, 'streaming_service') ? 1 : 0;
 
                 scoreResult.push({
